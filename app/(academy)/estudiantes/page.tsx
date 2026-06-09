@@ -10,6 +10,7 @@ export default async function ObtenerEstudiantes() {
         <table>
           <thead>
             <tr>
+              <th className='p-3'>id</th>
               <th className='p-3'>Nombres</th>
               <th className='p-3'>Paterno</th>
               <th className='p-3'>Materno</th>
@@ -20,6 +21,7 @@ export default async function ObtenerEstudiantes() {
           <tbody>
             {estudiantes.map((est) => (
               <tr key={est.id} className='border-t'>
+                <td className='p-3'>{est.id}</td>
                 <td className='p-3'>{est.nombres}</td>
                 <td className='p-3'>{est.paterno}</td>
                 <td className='p-3'>{est.materno}</td>
